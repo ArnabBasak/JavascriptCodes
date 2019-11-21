@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>
+            String Methods
+        </title>
+    </head>
+<body>
+    <p id="demo">Here we will calculate the index of any said charater</p>
+    <p id="demo1">Here we will slice the string</p>
+    <p id="demo2"> Here we will Replace something</p>
+    <p id="demo3">here we will convert the string to upper case</p>
+    <p id="demo4">HERE WE WILL CONVERT THE STRING TO LOWE CASE</p>
+    <p id="demo5">concating of two string</p>
+    <input type="button" value="index calculator" onclick="demo()"/>
+    <input type="button" value="slice" onclick="demo1()"/>
+    <input type="button" value="Replace" onclick="demo2()"/>
+    <input type="button" value="upper case" onclick="demo3()"/>
+    <input type="button" value="lower case" onclick="demo4()"/>
+    <input type="button" value="concating" onclick="demo5()"/>
+    <script>
+        function demo()
+        {
+            alert('searching for index of we')
+            var str = document.getElementById('demo').innerHTML
+            var pos = str.indexOf('we')
+            document.getElementById('demo').innerHTML = pos
+        }
+        function demo1()
+        {
+            alert('doing slice at position 4')
+            var str = document.getElementById('demo1').innerHTML
+            var pos = str.slice(4)
+            document.getElementById('demo1').innerHTML = pos
+        }
+        function demo2()
+        {
+            alert('Replacing something with nothing')
+            var str = document.getElementById('demo2').innerHTML
+            var pos = str.replace('something','nothing')
+            document.getElementById('demo2').innerHTML = pos 
+        }
+        function demo3()
+        {
+            alert('Making the string upper case')
+            var str = document.getElementById('demo3').innerHTML
+            var pos = str.toUpperCase()
+            document.getElementById('demo3').innerHTML = pos
+        }
+        function demo4()
+        {
+            alert('Making the strings lower case')
+            var str = document.getElementById('demo4').innerHTML
+            document.getElementById('demo4').innerHTML = str.toLowerCase(document.getElementById('demo4').innerHTML)
+        }
+        function demo5()
+        {
+            alert('Concatinating the texts ')
+            var str2 = " + new concating texts"
+            var str = document.getElementById('demo5').innerHTML
+            document.getElementById('demo5').innerHTML = str.concat(str2)
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>
+            Java script array
+        </title>
+        </head>
+        <body>
+            <p id="demo">Declaring an array</p>
+            <p id="demo1">Display an element in array</p>
+            <p id="demo2">Replace an element in array</p>
+            <p id="demo3">Check the length of array</p>
+            <p id="demo4">Adding elements in array</p>
+            <input type="button" value="Declaring" onclick="demo()"/>
+            <input type="button" value="Displaying" onclick="demo1()"/>
+            <input type="button" value="Replaceing" onclick="demo2()"/>
+            <input type="button" value="length" onclick="demo3()"/>
+            <input type="button" value="Adding"onclick="demo4()"/>
+<script>
+    //creating an array
+    function demo()
+    {
+        var laptop = ['HP','DELL','APPLE']
+        document.getElementById('demo').innerHTML = laptop
+    }
+    // displaying an element in array
+    function demo1()
+    {
+        var laptop = ['HP','DELL','APPLE']
+        var arrayelement = laptop[1]
+        document.getElementById('demo1').innerHTML = arrayelement 
+    }
+    //replacing an element in array
+    function demo2()
+    {
+        var laptop = ['HP','DELL','APPLE']
+        laptop[0] = "SONY"
+        document.getElementById('demo2').innerHTML = laptop
+        
+    }
+    //length of  array
+    function demo3()
+    {
+        var laptop = ['HP','DELL','APPLE']
+        document.getElementById('demo3').innerHTML = laptop.length
+
+    }
+    //adding elements in array
+    function demo4()
+    {
+        var laptop = ['HP','DELL','APPLE']
+        laptop.push("SONY")
+        laptop[laptop.length] = "LENOVO"
+        document.getElementById('demo4').innerHTML = laptop
+    }
+</script>
+
+        </body>
+
+    </html>

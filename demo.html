@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>
+            This is the javascript practice page
+        </title>
+    </head>
+<body>
+    <form>
+    <p id="demo 1">this is the demo paragraph before button 1 click</p>
+    <p id="demo 2">This is the demo paragraph before button 2  click</p>
+    <p id="demo 3 ">This is teh demo paragraph before button 3 click</p>
+    <p id="demo 4 ">This is the demo paragraph before button 4 clicked</p>
+    <p id="demo 5 ">This is the demo paragraph before button 5 clicked</p>
+    <input type="button" value="button 1" onclick="demo1()"/>
+    <input type="button" value="button 2" onclick="demo2()"/>
+    <input type="button" value="button 3" onclick="demo3()"/>
+    <input type="button" value="button 4" onclick="demo4()"/>
+    <input type="button" value="button 5" onclick="demo5()"/>
+</form>
+<script>
+    function demo1(){
+        var myvariable = "This is the change paragraph";
+        document.getElementById("demo 1").innerHTML = myvariable;
+    }
+    function demo2()
+    {
+        var a = 12;
+        var b = 13;
+        var c = a + b;
+        document.getElementById("demo 2").innerHTML = c;
+    }
+    function demo3()
+    {
+        var a = "arnab"
+        document.getElementById("demo 3 ").innerHTML = "My name is "+a
+    }
+    function demo4()
+    {
+        var firstname = "arnab",lastname = "basak",age = 26
+        document.getElementById("demo 4 ").innerHTML = firstname + " " + lastname + " " + age
+    }
+    function demo5()
+    {
+        var a,b,c,d 
+        a = 12;
+        b = 13;
+        c = 25;
+        d = a+b/c
+        document.getElementById("demo 5 ").innerHTML = d
+    }
+
+</script>
+</body>
+    </html>

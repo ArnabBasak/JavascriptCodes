@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            Object creation
+        </title>
+    </head>
+<body>
+    <p id = "demo1">Person name</p>
+    <p id = "demo2">Person age</p>
+    <p id = "demo3">Full information</p>
+    <input type="button" value="Person name" onclick="Name()">
+    <input type="button" value="Person age" onclick="Age()">
+    <input type="button" value="full information" onclick="Data()">
+    <script>
+    var person = {name:"John",age:"80"}
+    function Name()
+    {
+        document.getElementById("demo1").innerHTML = person.name;
+    }
+    function Age()
+    {
+        document.getElementById("demo2").innerHTML = person.age;
+    }
+    function Data()
+    {
+        document.getElementById("demo3").innerHTML = "Person name is "+person.name+" and his age is "+person.age; 
+    }
+    </script>
+</body>
+</html>

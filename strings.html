@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            String exp
+            </title>
+    </head>
+    <body>
+        <p id="demo"> This method will check the length </p>
+        <p id="demo1"> This method will display the text containing in the variable</p>
+        <p id="demo2"> This method will concatinate the string</p>
+        <p id="demo3">This method will display the string in correct quotes</p>
+        <input type="button" onclick="demo()" value="Check length">
+        <input type="button" onclick="demo1()" value="use variable">
+        <input type="button" onclick="demo2()" value = "concatinate">
+        <input type="button" onclick="demo3()" value="quotes">
+        <script>
+        function demo()
+        {
+            text = "This is the Text";
+            document.getElementById('demo').innerHTML = "The Text is "+text+" the length of the text is "+text.length;
+        }
+        function demo1()
+        {
+            text = "This text is contained in the variable";
+            document.getElementById('demo1').innerHTML = text;
+        }
+        function demo2()
+        {
+            text = "This is the first text";
+            text2 = "This is the second text";
+            document.getElementById('demo2').innerHTML = "This is the concatination of two text "+text+text2;
+        }
+        function demo3()
+        {
+            text = "This is the text in 'correct quotes'"
+            document.getElementById('demo3').innerHTML = text;
+        }
+        </script>
+
+    </body>
+
+    </html>

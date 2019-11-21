@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>
+            Aritmatic function
+            </title>
+        </title>
+        </head>
+    <body>
+        <form>
+        <p id="demo1">Addition</p>
+        <p id="demo2">Substraction</p>
+        <p id="demo3">Multiplication</p>
+        <p id="demo4">Division</p>
+        <p id="demo5">modulus</p>
+        <input type="button" value="Addition" onclick="addition()"/>
+        <input type="button" value="Substraction" onclick="Substraction()"/>
+        <input type="button" value="Multiplication" onclick="Multiplication()"/>
+        <input type="button" value="Division" onclick="Division()"/>
+        <input type="button" value="modulus" onclick="modulus()"/>
+        </form>
+    <script>
+    function addition()
+    {
+        var x = 12;
+        x+=15;
+        document.getElementById("demo1").innerHTML = "addition of 12 and 15 is "+x;
+
+    }
+    function Substraction()
+    {
+        var x = 13,n = 45;
+        x-=n;
+        document.getElementById("demo2").innerHTML = "substraction of 13 and 45 is "+x;
+
+    }
+    function Multiplication()
+    {
+        var x = 13,n = 0987654;
+        x *= n;
+        document.getElementById("demo3").innerHTML = "multiplication of 13 and 0987654 is "+x;
+    }
+    function Division()
+    {
+        var x = 13,n=0987654321;
+        x /= n;
+        document.getElementById("demo4").innerHTML = "division of 13 and 0987654321 is "+x;
+    }
+    function modulus()
+    {
+        var x = 13,n=9876789;
+        x %=n;
+        document.getElementById("demo5").innerHTML = "division of 13 and 9876789 is "+x
+    }
+    </script>
+
+        </body>
+
+    </html>

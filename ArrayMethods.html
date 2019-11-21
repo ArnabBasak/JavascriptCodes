@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>
+            Array Methods
+        </title>
+    </head>
+    <body>
+            <p id="demo">Poping element from array</p>
+            <p id="demo1">Pusing an element in array</p>
+            <p id="demo2">splicing an array</p>
+            <p id="demo3">concat two array array</p>
+            <p id="demo4">shifting </p>
+            <p id="demo5">unsift </p>
+            <p id="demo6">To string</p>
+            <p id="demo7">To join</p>
+            <input type="button" value="Poping" onclick="demo()"/>
+            <input type="button" value="pushing" onclick="demo1()"/>
+            <input type="button" value="splicing" onclick="demo2()"/>
+            <input type="button" value="concat" onclick="demo3()"/>
+            <input type="button" value="shifting"onclick="demo4()"/>
+            <input type="button" value="unsift"onclick="demo5()"/>
+            <input type="button" value="To string" onclick="demo6()"/>
+            <input type="button" value="To join" onclick="demo7()"/>
+        <script>
+        function demo()
+        {
+            var fruits = ["apple","mango","banana"]
+            alert(fruits)
+            var newfruits = fruits.pop()
+            document.getElementById('demo').innerHTML = newfruits
+        }
+        function demo1()
+        {
+            var fruits = ["apple","mango","banana"]
+            alert(fruits)
+            var newfruits = fruits.push("KIWI")
+            document.getElementById('demo1').innerHTML = newfruits
+        }
+        function demo2()
+        {
+            var fruits = ["apple","mango","banana","kiwi"]
+            alert(fruits)
+            fruits.splice(0,1)
+            document.getElementById('demo2').innerHTML = fruits
+        }
+        function demo3()
+        {
+            var fruits = ["apple","mango","banana","kiwi"]
+            var animals = ["tiger",'dog','monkey','cat']
+            var mens = fruits.concat(animals)
+            document.getElementById('demo3').innerHTML = mens
+        }
+        function demo4()
+        {
+            var fruits = ["apple","mango","banana","kiwi"]
+            alert(fruits)
+            fruits.shift()
+            document.getElementById('demo4').innerHTML =  fruits 
+        }
+        function demo5()
+        {
+            var fruits = ["apple","mango","banana","kiwi"]
+            alert(fruits)
+            fruits.unshift("lemon")
+            document.getElementById('demo5').innerHTML = fruits
+        }
+        function demo6()
+        {
+            var fruits = ["apple","mango","banana","kiwi"]
+            alert(fruits)
+            document.getElementById('demo6').innerHTML = fruits.toString()
+        }
+        function demo7()
+        {
+            var fruits = ["apple","mango","banana","kiwi"]
+            alert(fruits)
+            document.getElementById('demo7').innerHTML = fruits.join("||")
+
+        }
+        </script>
+    </body>
+</html>
